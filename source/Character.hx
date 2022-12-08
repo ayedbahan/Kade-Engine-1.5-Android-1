@@ -495,6 +495,25 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+      case 'ayed':
+				// let's go I am on Kade engine YAYYYYYYY
+				tex = Paths.getSparrowAtlas('characters/ayed');
+				frames = tex;
+				animation.addByPrefix('idle', 'ayed idle', 16);
+				animation.addByPrefix('singUP', 'ayed Up', 16);
+				animation.addByPrefix('singRIGHT', 'ayed Right', 16);
+				animation.addByPrefix('singDOWN', 'ayed Down', 16);
+				animation.addByPrefix('singLEFT', 'ayed Left', 16);
+				animation.addByPrefix('Hey', 'ayed Hey', 16);
+
+				addOffset('idle', 0, 10);
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+				addOffset("Hey", 0, 10);
+
+				playAnim('idle');
 		}
 
 		dance();
